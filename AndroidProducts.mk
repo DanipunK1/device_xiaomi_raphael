@@ -13,9 +13,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/kangos_raphael.mk
+    $(LOCAL_DIR)/colt_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    kangos_raphael-user \
-    kangos_raphael-userdebug \
-    kangos_raphael-eng
+    colt_raphael-user \
+    colt_raphael-userdebug \
+    colt_raphael-eng
+
