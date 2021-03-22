@@ -15,27 +15,29 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common Colt stuff.
-$(call inherit-product, vendor/colt/config/common.mk)
+# Inherit some common CHERISH stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
+CHERISH_NONGAPPS=true
+
+#Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_USES_BLUR := true
-TARGET_INCLUDE_STOCK_ARCORE := true
+
+# Maintainer
+CHERISH_BUILD_TYPE := OFFICIAL
+
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.cherish.maintainer=DanipunK1
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := colt_raphael
+PRODUCT_NAME := cherish_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
-# For Device maintainer and CPU Information
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.colt.maintainer=DanipunK1 \
-    ro.colt.cpu=SM8150
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="raphael"
+    PRODUCT_NAME="raphael" \
+    TARGET_DEVICE="raphael"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
