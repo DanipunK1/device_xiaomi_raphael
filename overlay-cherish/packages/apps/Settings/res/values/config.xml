@@ -31,20 +31,8 @@
     <bool name="config_supportScreenOffFod">true</bool>
 
     <!-- Device specific doze package -->
-    <string name="config_customDozePackage">com.custom.ambient.display/com.custom.ambient.display.DozeSettings</string>
+    <string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
 
-    <!-- Smart Charging -->
-    <bool name="config_supportSmartCharging">true</bool>
-
-     <!-- For Ultra Power Saving -->
-     <bool name="config_supportUltraPowerSaving">true</bool>
-
-     <!-- For Enabling Battery Heath -->
-     <bool name="config_supportBatteryHealth">true</bool>
-
-     <!-- Battery Health -->
-    <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
-    <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
-    <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
-
+    <!-- FOD recognizing animation -->
+    <bool name="config_showFODAnimationSettings">true</bool>
 </resources>
