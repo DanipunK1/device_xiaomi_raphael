@@ -18,7 +18,11 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
 
 # Qcom Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += \
-	device/xiaomi/raphael/sepolicy/vendor/qcom
+    device/xiaomi/raphael/sepolicy/vendor/qcom
+
+# Dolby Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    device/xiaomi/raphael/sepolicy/vendor/dolby
 
 # Xiaomi Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += \
