@@ -198,7 +198,7 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    XiaomiCustomDoze
+    CustomDoze
 
 # Fingerprint
 PRODUCT_PACKAGES += \
