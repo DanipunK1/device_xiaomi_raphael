@@ -19,11 +19,7 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Gapps
-CHERISH_WITHGAPPS := true
-TARGET_INCLUDE_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
+CHERISH_NONGAPPS=true
 
 # Face Unlock Flag
 TARGET_FACE_UNLOCK_SUPPORTED := true
