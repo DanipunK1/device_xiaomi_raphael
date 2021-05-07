@@ -1,4 +1,4 @@
-# Copyright (C) 2021 ShapeShiftOS
+# Copyright (C) 2020 LineageOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,25 +15,38 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+# Inherit some common CHERISH stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+
+# Gapps
+CHERISH_WITHGAPPS := true
+TARGET_INCLUDE_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+# Face Unlock Flag
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+#Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Maintainer
+CHERISH_BUILD_TYPE := OFFICIAL
+
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.cherish.maintainer=DanipunK1
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := octavi_raphael
+PRODUCT_NAME := cherish_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="raphael"
+    PRODUCT_NAME="raphael" \
+    TARGET_DEVICE="raphael"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-
-# OctaviOS stuff
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USES_BLUR := true
-TARGET_WANTS_FOD_ANIMATIONS := true
-OCTAVI_BUILD_TYPE := Official
-OCTAVI_DEVICE_MAINTAINER := nj
