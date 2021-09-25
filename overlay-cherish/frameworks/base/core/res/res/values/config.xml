@@ -31,4 +31,6 @@
         <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
     </string-array>
 
+    <!-- Night Light FOD -->
+    <bool name="disable_fod_night_light">true</bool>
 </resources>
