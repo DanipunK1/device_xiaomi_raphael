@@ -1,5 +1,8 @@
 # FPS Info
 /sys/class/drm/card0/sde-crtc-0/measured_fps                         u:object_r:vendor_sysfs_graphics:s0
 
+# Widevine
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.4-service.clearkey                                     u:object_r:vendor_hal_drm_widevine_exec:s0
+
 # Zram
 /data/per_boot(/.*)?                                                    u:object_r:per_boot_file:s0
