@@ -20,6 +20,10 @@ $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# GApps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := xtended_raphael
 PRODUCT_DEVICE := raphael
