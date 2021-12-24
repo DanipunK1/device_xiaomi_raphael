@@ -81,6 +81,9 @@ ro.nfc.port=I2C
 # One handed mode
 ro.support_one_handed_mode=true
 
+# Processor Model
+ro.processor.model=SM8150
+
 # RCS
 persist.rcs.supported=1
 
