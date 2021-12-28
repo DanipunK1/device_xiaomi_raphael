@@ -39,6 +39,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Xtended stuff
 XTENDED_BUILD_MAINTAINER := DanipunK1
+EXTRA_UDFPS_ANIMATIONS := true
 
 # Build Fingerprint
 BUILD_FINGERPRINT := "google/redfin/redfin:12/SQ1A.220105.002/7961164:user/release-keys"
