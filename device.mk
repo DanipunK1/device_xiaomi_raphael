@@ -62,6 +62,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
+    audio.primary.default \
+    audio.primary.msmnile \
     audio.usb.default \
     audio.r_submix.default
 
