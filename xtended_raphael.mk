@@ -17,11 +17,12 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # GApps
-WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
