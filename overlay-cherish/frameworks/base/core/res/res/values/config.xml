@@ -33,4 +33,7 @@
 
     <!-- Night Light FOD -->
     <bool name="disable_fod_night_light">true</bool>
+
+    <!-- Gaming mode FPSInfoService FPS node file path -->
+    <string name="config_gamingmode_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
 </resources>
