@@ -609,4 +609,7 @@
 
     <!-- Wether to handle audio direction changes between major call states -->
     <bool name="config_handleAudioDirectionChangesBetweenCallStateChanges">false</bool>
+
+    <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
+    <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>
 </resources>
