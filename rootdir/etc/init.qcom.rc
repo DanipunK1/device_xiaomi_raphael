@@ -72,6 +72,13 @@ on early-boot
     chmod 0660 /sys/devices/virtual/hdcp/msm_hdcp/min_level_change
 
 on boot
+
+    # Backlight
+    chown system system /sys/class/backlight/panel0-backlight/brightness
+    chown system system /sys/class/backlight/panel0-backlight/max_brightness
+    chmod 0644 /sys/class/backlight/panel0-backlight/brightness
+    chmod 0644 /sys/class/backlight/panel0-backlight/max_brightness
+
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/state
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
     chmod 0660 /sys/class/rfkill/rfkill0/state
