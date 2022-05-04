@@ -19,7 +19,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Pocket Lock -->
-    <bool name="config_pocketUseLightSensor">false</bool>
+    <bool name="config_pocketModeSupported">true</bool>
 
     <!-- Statusbar Left-Right padding defaults -->
     <integer name="config_statusbarPaddingStartDef">16</integer>
