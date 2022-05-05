@@ -44,6 +44,3 @@ EXTRA_UDFPS_ANIMATIONS := true
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.cherish.maintainer=DanipunK1
-
-BUILD_FINGERPRINT := "google/redfin/redfin:12/SQ1A.211205.008/7888514:user/release-keys"
-
