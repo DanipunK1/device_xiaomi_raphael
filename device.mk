@@ -359,7 +359,8 @@ PRODUCT_COPY_FILES += \
 
 # Mlipay
 PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.mlipay@1.1.vendor:64
+    vendor.xiaomi.hardware.mlipay@1.1.vendor:64 \
+    vendor.xiaomi.hardware.mtdservice@1.0.vendor
 
 # Native Public Libraries
 PRODUCT_COPY_FILES += \
