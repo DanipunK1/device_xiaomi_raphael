@@ -216,8 +216,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
-# GoogleCamera
-$(call inherit-product-if-exists, vendor/GoogleCamera/GoogleCamera.mk)
+# GoogleCamera BSG
+$(call inherit-product, vendor/GcamBSG/GcamBSG-vendor.mk)
 
 # Google Photos
 PRODUCT_COPY_FILES += \
