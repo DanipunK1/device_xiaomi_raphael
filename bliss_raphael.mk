@@ -17,6 +17,8 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
+$(call inherit-product, vendor/gapps/basic/config.mk)
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
