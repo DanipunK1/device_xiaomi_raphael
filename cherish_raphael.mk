@@ -18,6 +18,8 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # Inherit some common stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
+$(call inherit-product, vendor/v4afx/config.mk)
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
