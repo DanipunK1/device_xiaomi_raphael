@@ -15,6 +15,9 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # Inherit some common stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
+# Inherit ViPER4Android FX
+$(call inherit-product, vendor/v4afx/config.mk)
+
 # Cherish Flags
 CHERISH_BUILD_TYPE := OFFICIAL
 EXTRA_UDFPS_ANIMATIONS := true
