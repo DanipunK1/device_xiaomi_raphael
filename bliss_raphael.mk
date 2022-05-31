@@ -21,6 +21,8 @@ $(call inherit-product, vendor/gapps/basic/config.mk)
 
 $(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
+$(call inherit-product, vendor/v4afx/config.mk)
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
