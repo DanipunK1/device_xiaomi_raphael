@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015-2016 The CyanogenMod Project
-                   2017-2020 The LineageOS Project
+                   2017-2022 The LineageOS Project
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -34,7 +34,8 @@
         android:label="@string/device_settings_app_name"
         android:persistent="true"
         android:defaultToDeviceProtectedStorage="true"
-        android:directBootAware="true">
+        android:directBootAware="true"
+        android:theme="@style/Theme.SubSettingsBase">
 
         <receiver android:name=".BootCompletedReceiver">
             <intent-filter android:priority="1000">
@@ -75,8 +76,7 @@
 
         <activity
             android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/ambient_display_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -86,8 +86,7 @@
 
         <activity
             android:name=".popupcamera.PopupCameraSettingsActivity"
-            android:label="@string/popup_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/popup_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -108,8 +107,7 @@
 
         <activity
             android:name=".speaker.ClearSpeakerActivity"
-            android:label="@string/clear_speaker_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/clear_speaker_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -123,8 +121,7 @@
 
 		<activity
             android:name=".display.DisplaySettingsActivity"
-            android:label="@string/display_settings_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/display_settings_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
