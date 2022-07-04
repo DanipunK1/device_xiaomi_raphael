@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_raphael.mk
+    $(LOCAL_DIR)/cherish_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_raphael-user \
-    voltage_raphael-userdebug \
-    voltage_raphael-eng
+    cherish_raphael-user \
+    cherish_raphael-userdebug \
+    cherish_raphael-eng
