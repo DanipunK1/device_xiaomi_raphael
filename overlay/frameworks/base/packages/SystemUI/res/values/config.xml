@@ -37,4 +37,9 @@
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">100</integer>
 
+    <!-- Show mic or phone affordance on Keyguard -->
+    <bool name="config_keyguardShowLeftAffordance">false</bool>
+
+    <!-- Show camera affordance on Keyguard -->
+    <bool name="config_keyguardShowCameraAffordance">false</bool>
 </resources>
