@@ -1,4 +1,4 @@
-# Copyright (C) 2022 VoltageOS
+# Copyright (C) 2022 The PixelExperience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,20 +15,14 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common VoltageOS stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
-
-# Official-ify
-VOLTAGE_BUILD_TYPE := OFFICIAL
-
-# UDFPS animations
-EXTRA_UDFPS_ANIMATIONS := true
+# Inherit some common PixelExperience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 2160
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := voltage_raphael
+PRODUCT_NAME := aosp_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
