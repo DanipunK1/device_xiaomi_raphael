@@ -16,23 +16,22 @@
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 $(call inherit-product, vendor/v4afx/config.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# CherishOS stuff
-CHERISH_BUILD_TYPE := OFFICIAL
+# Xtended stuff
 TARGET_SUPPORTS_QUICK_TAP := true
 EXTRA_UDFPS_ANIMATIONS := true
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=DanipunK1
+PROCESSOR_MODEL := SM8150
+XTENDED_BUILD_MAINTAINER := DanipunK1
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cherish_raphael
+PRODUCT_NAME := xtended_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
