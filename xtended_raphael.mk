@@ -29,6 +29,7 @@ EXTRA_UDFPS_ANIMATIONS := true
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 PROCESSOR_MODEL := SM8150
 XTENDED_BUILD_MAINTAINER := DanipunK1
+WITH_GAPPS=true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := xtended_raphael
