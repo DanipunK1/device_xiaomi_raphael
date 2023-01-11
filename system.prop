@@ -16,6 +16,10 @@ vendor.camera.sat.fallback.lux.d=50
 vendor.camera.enableNCSService=TRUE
 vendor.camera.enableTOFInterface=TRUE
 
+#Deep Sleep
+pm.sleep_mode=1
+vendor.post_boot.parsed=1
+
 # Charger
 ro.charger.enable_suspend=true
 
