@@ -18,6 +18,9 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # Inherit some common stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
+# ViPER4Android FX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 

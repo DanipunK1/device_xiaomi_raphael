@@ -20,6 +20,10 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
 BOARD_VENDOR_SEPOLICY_DIRS += \
 	device/xiaomi/raphael/sepolicy/vendor/qcom
 
+# ViPER4AndroidFX Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    device/xiaomi/raphael/sepolicy/vendor/ViPER4AndroidFX
+
 # Xiaomi Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xiaomi/raphael/sepolicy/vendor/xiaomi/audio \
