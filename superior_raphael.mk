@@ -15,6 +15,9 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # Inherit some common Superior stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
 
+# ViPER4Android FX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Rom Flags
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
