@@ -48,4 +48,6 @@
     <!-- Whether devices suports in-display fingerprint when screen is off -->
     <bool name="config_supportsScreenOffUdfps">true</bool>
 
+    <!-- Display color inversion availability -->
+    <bool name="config_displayInversionAvailable">false</bool>
 </resources>
