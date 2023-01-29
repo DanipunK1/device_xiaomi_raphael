@@ -18,6 +18,9 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 # Inherit ViPER4Android FX
 $(call inherit-product, vendor/v4afx/config.mk)
 
+# Inherit Google Camera
+$(call inherit-product-if-exists, vendor/Gcam/config.mk)
+
 # Cherish Flags
 CHERISH_BUILD_TYPE := OFFICIAL
 EXTRA_UDFPS_ANIMATIONS := true
