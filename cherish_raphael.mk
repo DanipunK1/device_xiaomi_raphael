@@ -21,6 +21,9 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 # ViPER4Android FX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
+# Inherit Google Camera
+$(call inherit-product-if-exists, vendor/Gcam/config.mk)
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
