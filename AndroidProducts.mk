@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_raphael.mk
+    $(LOCAL_DIR)/nad_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_raphael-user \
-    aosp_raphael-userdebug \
-    aosp_raphael-eng
+    nad_raphael-user \
+    nad_raphael-userdebug \
+    nad_raphael-eng
