@@ -65,6 +65,9 @@ BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 BUILD_BROKEN_DUP_SYSPROP := true
 
+# Camera
+MALLOC_SVELTE := true
+
 # Display
 BOARD_USES_ADRENO := true
 TARGET_DISABLED_UBWC := true
@@ -235,4 +238,3 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 include vendor/xiaomi/raphael/BoardConfigVendor.mk
-
