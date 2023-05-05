@@ -67,6 +67,7 @@ BUILD_BROKEN_DUP_SYSPROP := true
 
 # Camera
 MALLOC_SVELTE := true
+MALLOC_SVELTE_FOR_LIBC32 := true
 
 # Display
 BOARD_USES_ADRENO := true
